@@ -1,0 +1,115 @@
+body {
+	background-color: #fff ;
+	font-family: 'Roboto', sans-serif;
+	font-size:62.5%;
+}
+.floatfix:after {
+	content	:'';
+	display	:block; /* wyrównywanie headera */
+	clear	:both;	
+}
+
+.contener {
+	width: 80%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+header h1 {
+	float:left;
+	width:35%;
+	min-width:200px;
+}
+header h1 a {
+	display: block;
+	width: 200px;
+	height: 60px;
+	margin:5px 0;
+	text-indent: -999em;
+	background: url("../images/logo.png") top left no-repeat;
+}
+
+header nav {
+	float:right;
+	width:65%;
+}
+
+header nav ul {
+	display:table;
+	width: 100%;
+}
+header nav li{
+	display:table-cell;	
+}
+header nav ul li a{
+	display:block;
+	height: 70px;
+	line-height: 70px;
+	font-size: 1.5em;
+	color: #7cb029;
+	text-transform:uppercase;
+	text-align:center;
+	text-decoration:none;
+}
+header nav ul li a:hover{
+	Background: #7cb029;
+	color:#fff;
+} 
+
+
+
+
+
+
+
+
+
+
+/*-------------------Menu Switch--------------------------------- */
+.switch {
+		display: none;
+		background-color: #7cb029;
+		color: #fff;
+		padding: 10px 15px;
+		float:right;
+		font-size: 1.4em;
+		text-decoration: none;
+}
+
+/* ------------------Max-width 1024------------------------------ */
+@media screen and (max-width: 1024px) {
+.contener {
+		width: 90%;
+	}
+	
+}
+/* ------------------Max-width 768------------------------------- */
+@media screen and (max-width: 768px) {
+.contener {
+		width: 95%;	
+	}
+header nav {
+			width: 100%;	
+	}
+	
+}
+/* ------------------Max-width 480------------------------------- */
+@media screen and (max-width: 480px) {
+	.contener {
+		width :100%;
+	}
+header nav ul li {
+	display	:block;
+	width	:100%;
+}
+header nav ul li a {
+	height:40px;
+	line-height: 40px;
+	border-bottom : 1px solid #7cb029;
+	}
+}
+
+
+
+
+
